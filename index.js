@@ -66,7 +66,7 @@ client.on("message", async (message) => {
 
     message.reply(result);
   } else if (messageBody.startsWith("!star")) {
-    message.reply("Available commands: !ai <your message>");
+    message.reply("Available commands: !star <your message>");
   } else if (messageBody.startsWith("!sticker")) {
     if (message.hasMedia) {
       const media = await message.downloadMedia();
